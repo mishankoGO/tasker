@@ -32,6 +32,7 @@ func init() {
 	if err != nil {
 		log.Fatal(err)
 	}
+	fmt.Println("Connected to mongo")
 
 	// create a database
 	collection = client.Database("tasker").Collection("tasks")
